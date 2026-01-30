@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lingua AI | Smart Translator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div class="container">
+        <!-- Modern Header -->
+        <div class="header">
+            <h1><i class="fas fa-magic"></i>ToDarija </h1>
+            <p style="color: #718096; font-size: 0.9rem; margin-top: 4px; opacity: 0.8;">
+                Translator powered by AI
+            </p>
+        </div>
+
+        <!-- Input Section -->
+        <div class="text-container">
+            <div class="textarea-header">
+                <label><i class="fas fa-pencil-alt"></i> Original Text</label>
+                <button id="clear-input" class="small-btn">
+                    <i class="fas fa-eraser"></i> Clear
+                </button>
+            </div>
+            <textarea 
+                id="input-text" 
+                placeholder="Start typing or paste your text here..."
+                rows="5"
+                autofocus
+            ></textarea>
+            <div class="char-count" id="input-char-count">0 characters</div>
+        </div>
+
+        <!-- Action Button -->
+        <button id="translate-btn" class="translate-btn">
+            <i class="fas fa-bolt"></i> Translate Now
+        </button>
+        
+        <!-- Animated Loading State -->
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <span>Processing your translation</span>
+        </div>
+
+        <!-- Output Section -->
+        <div class="text-container">
+            <div class="textarea-header">
+                <label><i class="fas fa-globe"></i> Translated Text</label>
+                <button id="copy-btn" class="small-btn" disabled>
+                    <i class="fas fa-clipboard"></i> Copy
+                </button>
+            </div>
+            <textarea 
+                id="output-text" 
+                placeholder="Your translation will appear here..."
+                rows="5"
+                readonly
+            ></textarea>
+            <div class="char-count" id="output-char-count">0 characters</div>
+        </div>
+
+        <!-- Secondary Action -->
+        <button id="clear-all" class="clear-all-btn">
+            <i class="fas fa-redo"></i> Reset All
+        </button>
+
+        <!-- Status Indicator (Hidden by default) -->
+        <div id="status-indicator" style="
+            text-align: center;
+            margin-top: 16px;
+            font-size: 0.8rem;
+            color: #718096;
+            opacity: 0.7;
+            padding: 8px;
+            border-radius: 8px;
+            background: rgba(241, 245, 249, 0.5);
+        ">
+            <i class="fas fa-circle" style="color: #48bb78; font-size: 0.6rem; margin-right: 6px;"></i>
+            Ready to translate
+        </div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>

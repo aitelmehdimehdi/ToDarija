@@ -5,3 +5,5 @@ This project is a Chrome Extension (Manifest V3) that allows users to translate 
 The extension sends the selected text to a Java RESTful Web Service backend, which integrates with AI APIs through OpenRouter, using models such as DeepSeek (and OpenAI-compatible endpoints) to generate accurate Darija translations. The result is then displayed directly inside the extension interface, providing a fast and user-friendly translation experience.
 
 Technologies used: Java, REST Web Services (API), Chrome Extension (Manifest V3), AI API Integration (OpenRouter / OpenAI-compatible), DeepSeek.
+
+Take a look at : https://drive.google.com/file/d/1ilBL8R-PUwNH9lcM77MPwgXWugIraZDd/view?usp=drive_link
